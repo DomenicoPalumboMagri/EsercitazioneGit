@@ -1,17 +1,17 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov  8 10:27:14 2024
+# Inizializziamo una variabile per la somma
+somma = 0
 
-@author: net
-"""
+# Ciclo che continua finché l'utente non inserisce 0
+while True:
+    # Chiediamo all'utente di inserire un numero
+    numero = int(input("Inserisci un numero intero (0 per terminare): "))
+    
+    # Se l'utente inserisce 0, usciamo dal ciclo
+    if numero == 0:
+        break
+    
+    # Aggiungiamo il numero alla somma
+    somma += numero
 
-# Chiediamo il nome e l'età dell'utente
-nome = input("Qual è il tuo nome? ")
-eta = int(input("Quanti anni hai? "))
-
-# Calcoliamo l'anno in cui l'utente compirà 100 anni
-anno_corrente = 2024
-anno_100 = anno_corrente + (100 - eta)
-
-# Mostriamo il risultato
-print(f"Ciao {nome}, compirai 100 anni nel {anno_100}.")
+# Alla fine, stampiamo la somma dei numeri
+print(f"La somma di tutti i numeri inseriti è: {somma}")
